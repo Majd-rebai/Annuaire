@@ -1,0 +1,189 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30 janv. 2018, 12:04:03
+    Author     : asus
+*/
+
+body {
+    background-color: #E2E6EA;
+    color: #ffffff;
+    font-family: Trebuchet MS, Verdana;
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear:both;
+}
+
+#page {
+  width: 100%;
+  margin: auto;
+}
+
+h3 {
+    font-family: Trebuchet MS, Verdana;
+    font-size: 16px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+    a.add {
+        background:transparent url(../img/icons/add.gif) no-repeat scroll left center;
+        color:#000000;
+        padding-left: 18px;
+    }
+
+img {
+    border:0;
+}
+
+
+
+
+/*****************/
+/* form elements */
+/*****************/
+form {
+	margin:0;
+    padding: 10px 5px;
+    width:500px;
+}
+    form span.error{
+      color: #FF0000;
+    }
+
+
+legend {
+    border: 1px solid #000000;
+    color:#000000;
+    background-color: #E1E4BE;
+    padding: 5px;
+    margin-left:20px;
+    font-size: 14px;
+}
+
+label {
+	font-weight:bold;
+	margin:5px 0;
+    width:100px;
+    font-size:12px;
+    display:block;
+}
+    label span.required {
+      color: #9ACD32;
+    }
+
+input {
+	padding:2px;
+	border:1px solid #eee;
+	color:#000000;
+    background-color: #F5F5F5 ;
+}
+    input.error {
+    	border:1px solid #FF0000;
+        color:#000000;
+    }
+
+textarea {
+	width:400px;
+	padding:2px;
+	border:1px solid #eee;
+	height:100px;
+	display:block;
+    color:#000000;
+    background-color: #F5F5F5 ;
+}
+    textarea.error {
+    	border:1px solid #FF0000;
+        color:#000000;
+    }
+
+input.button {
+	font: bold 12px Arial, Sans-serif;
+	height: 24px;
+	margin: 0;
+	padding: 2px 3px;
+	color: #000000;
+	background: #8EB50C url(../img/button-bg.jpg) repeat-x 0 0;
+	border: none;
+}
+
+form.search {
+    margin:0;
+    padding: 10px 5px;
+	border: none;
+	background-color: transparent;
+}
+
+input.search {
+    color:#000000;
+    background: #DCDCDC url(../img/icons/search.gif) no-repeat top right;
+    padding-right:20px;
+    border:1px solid #D4D7AE;
+}
+
+/***************/
+/* login page */
+/***************/
+
+#logbox {
+    width:450px;
+    border: 1px solid #6588A8;
+    background-color: #ffffff;
+    padding: 2px;
+    margin: 50px auto;
+}
+
+#logbox-title {
+    background-color: #000000;
+    text-align: center;
+}
+
+#logbox_right {
+	float:left;
+	margin:10px 20px 0 0;
+}
+
+#logbox_left {
+	float:left;
+    width: 150px;
+    height:150px;
+    background-image: url(./img/keys.gif);
+}
+
+.error {
+	width:200px;
+	color: red;
+	font-weight: bold;
+}
+
+.logbox-form {
+    border:none;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    width:auto;
+}
+    .logbox-form input{
+        background-color: #DCDCDC;
+    }
+
+    .logbox-form input:focus{
+        border: 1px solid green;
+    }
+
+.logbox-form p {
+    margin: 0;
+}
