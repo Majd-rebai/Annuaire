@@ -78,8 +78,22 @@ public class connexionLDAP extends HttpServlet {
         //processRequest(request, response);
         String nom = request.getParameter( "username" );
         String mdp = request.getParameter( "password" );
+        String message;
+        /*
+         * Initialisation du message à afficher : si un des champs obligatoires
+         * du formulaire n'est pas renseigné, alors on affiche un message
+         * d'erreur, sinon on affiche un message de succès
+         */
+        if ( nom.trim().isEmpty() || mdp.trim().isEmpty() ) {
+            message = "Erreur - Vous n'avez pas rempli tous les champs obligatoires.";
+        } else {
+            message = " succès !";
+            
+            
+        }
         Utilisateur utilisateur = new Utilisateur(nom,mdp);
         request.setAttribute( "utilisateur", utilisateur );
+        request.setAttribute( "message" , message);
         this.getServletContext().getRequestDispatcher( "/WEB-INF/afficherUtilisateur.jsp" ).forward( request, response );
         
         

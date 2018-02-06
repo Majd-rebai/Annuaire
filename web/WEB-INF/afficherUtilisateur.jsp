@@ -14,5 +14,6 @@
     <body>
         <p>Nom : ${ utilisateur.name }</p>
         <p>mot de passe : ${ utilisateur.password }</p>
+        <p>${ message }</p>
     </body>
 </html>
