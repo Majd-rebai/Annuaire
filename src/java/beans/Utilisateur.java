@@ -1,3 +1,5 @@
+package beans;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -16,6 +18,10 @@ public class Utilisateur {
     private String question;
     private String answer;
 
+    public Utilisateur(String name, String password){
+        this.name=name;
+        this.password=password;
+    }
     public Utilisateur(String name, String firstName, String password, String mail, String question, String answer) {
         this.name = name;
         this.firstName = firstName;

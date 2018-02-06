@@ -160,7 +160,7 @@ input.search {
 	float:left;
     width: 150px;
     height:150px;
-    background-image: url(./img/keys.gif);
+    background-image: url(/WEB-INF/img/keys.gif);
 }
 
 .error {

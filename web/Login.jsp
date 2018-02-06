@@ -21,14 +21,14 @@
         	    <div id="logbox-title">Your Sitename > Access to Back Office</div>
         		<div id="logbox_left"></div>
         		<div id="logbox_right">
-    	  			<form method="post" action="" class="logbox-form">
+    	  			<form method="post" action="connexionLDAP" class="logbox-form">
     	  				<p>
     			  			<label for="username">Username</label>
-    						<input type="text" name="username" id="username" value="" />
+    						<input type="text" name="username" id="username"  />
     					</p>
     					<p>
     						<label for="password">Password</label>
-    						<input type="password" name="password" id="password" value="" />
+    						<input type="password" name="password" id="password"  />
                         <input type="hidden" name="urlTo" value="" />
     					<input type="submit" name="submit" value="Login" class="button" />
                         </p>

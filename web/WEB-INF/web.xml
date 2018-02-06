@@ -9,4 +9,12 @@
             30
         </session-timeout>
     </session-config>
+    <servlet>
+        <servlet-name>connexionLDAP</servlet-name>
+        <servlet-class>servlets.connexionLDAP</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>connexionLDAP</servlet-name>
+        <url-pattern>/connexionLDAP</url-pattern>
+    </servlet-mapping>
 </web-app>
